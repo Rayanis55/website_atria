@@ -12,8 +12,13 @@ module.exports = {
       },
       fontFamily: {
         'atria': ['Helvetica Regular', ...defaultTheme.fontFamily.sans],
-      }
-    },
+      },
+      screens: {
+        'footer': { 'raw': '(max-width: 1160px )' }, // Responsive pour le footer
+        'tablet': { 'raw': '(max-width: 1024px)' }, // Responsive pour tablet et latop
+        'mobile': { 'raw': '(max-width: 600px)' }, // Responsive pour mobile
+      },
+    } 
   },
   plugins: [
     compress(),
@@ -27,4 +32,5 @@ module.exports = {
       })
     }),
   ]
+  /** @type {import('tailwindcss').Config} */
 }
