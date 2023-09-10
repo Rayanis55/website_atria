@@ -12,6 +12,8 @@ module.exports = {
       },
       fontFamily: {
         'atria': ['Helvetica Regular', ...defaultTheme.fontFamily.sans],
+        'calibri': ['Calibri', ...defaultTheme.fontFamily.sans],
+        
       },
       screens: {
         'footer': { 'raw': '(max-width: 1160px )' }, // Responsive pour le footer
